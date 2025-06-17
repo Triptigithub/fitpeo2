@@ -1,0 +1,9 @@
+.main-section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -3rem;
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 3rem;
+  background-color: #000;
+  padding-bottom: 12rem;
+}

@@ -1,0 +1,83 @@
+.donate-section {
+  padding: 4rem 1rem;
+  background: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.left-col {
+  grid-column: span 5;
+}
+
+.right-col {
+  grid-column: span 6;
+}
+
+.sticky-heading {
+  position: sticky;
+  top: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.donate-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.donate-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.donate-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.donate-btn {
+  padding: 1rem 2rem;
+  background: white;
+  color: black;
+  border-radius: 9999px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background: #FF6340;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4rem;
+  }
+
+  .left-col {
+    grid-column: span 5;
+  }
+
+  .right-col {
+    grid-column: span 7;
+  }
+}

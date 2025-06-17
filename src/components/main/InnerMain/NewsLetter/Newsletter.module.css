@@ -1,0 +1,119 @@
+.section {
+  padding: 4rem 1rem;
+  background: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.sidebar {
+  grid-column: span 12;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    grid-column: span 4;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+  }
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.content {
+  grid-column: span 12;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    grid-column: 6 / span 7;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  margin: 1rem 0;
+  font-size: 1.125rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #ccc;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup input {
+  padding: 0.75rem;
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkboxLabel input {
+  width: 20px;
+  height: 20px;
+}
+
+.privacyLink {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.buttonWrapper {
+  margin-top: 1rem;
+}
+
+.buttonWrapper button {
+  background: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+}
+.emailbox{
+    margin-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

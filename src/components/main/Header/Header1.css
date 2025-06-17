@@ -1,0 +1,75 @@
+.floating-menu {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 20;
+}
+.floating-box {
+  font-size: large;
+  width: 13rem;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;  
+}
+
+@media (max-width: 640px) {
+  .floating-menu {
+    left: 1rem;
+    right: auto;
+  }
+}
+@media (max-width: 425px) {
+  .floating-box {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .floating-menu {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .floating-menu {
+    left: 5%;
+    right: 5%;
+  }
+
+  .floating-box {
+    width: 100%;
+  }
+}
+
+
+.menu-button {
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding: 0 1rem;
+  border: 0px solid black;
+  background: none;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid black;
+  height: 100%;
+  width: 3rem;
+}
+
+.declare-link {
+  text-decoration: none;
+  color: black;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid black;
+  text-align: left;
+}

@@ -1,0 +1,16 @@
+.scroll-bar-outer {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 8px;
+  width: 100%;
+}
+
+.scroll-bar-inner {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 94, 0);
+  transform-origin: left;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}

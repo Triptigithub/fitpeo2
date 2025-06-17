@@ -1,0 +1,101 @@
+.heroSection {
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  overflow-y: hidden;
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.heroHeading {
+  grid-column: span 12;
+}
+
+.title {
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  margin-top: 0;
+  padding: 0;
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: auto;
+  width: 5rem;
+}
+
+.logo {
+  width: 100%;
+  display: block;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleLine {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 10vw, 150px);
+  letter-spacing: 4px;
+  transform: scaleY(1.2);
+  line-height: 1;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+.red {
+  color: #FF6340;
+}
+
+.heroText {
+  grid-column: span 12;
+  max-width: 40rem;
+  font-size: larger;
+  color: rgb(184, 184, 184);
+}
+
+@media (min-width: 768px) {
+  .heroGrid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+  }
+
+  .heroHeading {
+    grid-column: span 7;
+  }
+
+  .heroText {
+    grid-column: span 5;
+    margin-left: auto;
+  }
+
+  .logoWrapper {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoWrapper {
+    width: 8rem;
+  }
+}
